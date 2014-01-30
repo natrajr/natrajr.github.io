@@ -3,5 +3,6 @@ body {
 
 }
 h1 {
-	font-family: "Palatino Linotype", "Times New Roman"; 
+	font-family: "Palatino Linotype", "Times New Roman";
+	text-align: center; 
 }
