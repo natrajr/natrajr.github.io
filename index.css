@@ -2,7 +2,7 @@ body {
 	border-style: solid;
 
 }
-h1 {
+#name {
 	font-family: "Palatino Linotype", "Times New Roman";
 	text-align: left;
 	font-size: 70px;
