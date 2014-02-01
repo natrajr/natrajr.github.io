@@ -4,5 +4,8 @@ body {
 }
 h1 {
 	font-family: "Palatino Linotype", "Times New Roman";
-	text-align: center; 
+	text-align: left;
+	font-size: 70px;
 }
+
+
