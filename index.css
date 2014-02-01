@@ -1,4 +1,4 @@
-body {
+* {
 	border-style: solid;
 
 }
@@ -9,5 +9,9 @@ body {
 }
 
 img {
-	margin-left: 5cm;
+	position: absolute;
+	right: 0px;
+	width: 640px;
+	height: 480px;
+	
 }
