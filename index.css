@@ -1,5 +1,4 @@
 
-
 body {
 	background-image: url("green_cup.png");
 
@@ -16,8 +15,9 @@ body {
 
 h2 {
 	font-family: "Palatino Linotype";
+	font-size:32pt;
 	text-align: right;
-	padding-right:30px;
+	padding-right: 70px;
 	margin-top:0px;
 }
 
@@ -28,12 +28,8 @@ ul {
 	margin-bottom: 0.5cm;
 }
 
-ul li {
-	padding-top: 20px;
-}
-
-ul li li {
-	padding-bottom:40px;
+ul li:nth-child(1) {
+	padding-bottom:30px;
 }
 
 a {
