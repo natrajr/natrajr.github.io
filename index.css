@@ -1,3 +1,7 @@
+* { border-style:dashed;
+}
+
+
 body {
 	background-image: url("green_cup.png");
 
@@ -19,7 +23,6 @@ ul {
 }
 
 li {
-	border-style:dashed;
 	padding:40px;
 }
 
