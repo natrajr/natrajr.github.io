@@ -27,6 +27,9 @@ ul {
 li {
 	padding:40px;
 }
+ul li li {
+	margin-bottom:2cm;
+}
 
 a {
 	font-family: "Palatino Linotype";
