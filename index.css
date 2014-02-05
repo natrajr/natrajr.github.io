@@ -1,8 +1,13 @@
+
+* {
+	border-style:solid;
+}
+	
 body {
-background-image: url("green_cup.png");
-border-style:solid;
+	background-image: url("green_cup.png");
 
 }
+
 
 #name {
 	font-family: "Palatino Linotype";
