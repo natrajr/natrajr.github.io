@@ -18,6 +18,7 @@ h2 {
 	font-family: "Palatino Linotype";
 	text-align: right;
 	padding-right:30px;
+	margin-top:0px;
 }
 
 ul {
@@ -32,8 +33,7 @@ li {
 }
 
 ul li li {
-	padding-bottom:20px;
-	margin
+	padding-bottom:40px;
 }
 
 a {
