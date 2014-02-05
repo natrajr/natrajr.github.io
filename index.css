@@ -3,13 +3,18 @@ body {
 
 }
 
-#name {
+h1 {
 	font-family: "Palatino Linotype";
 	font-size: 36pt;
 	font-style: italic;
 	text-align: center;
 	margin-top: 20px;
 	padding-bottom:5px;
+}
+
+h2 {
+	font-family: "Palatino Linotype";
+	text-align: right;
 }
 
 ul {
@@ -21,10 +26,6 @@ ul {
 
 li {
 	padding:40px;
-}
-
-ul li: nth-child(2) {
-	margin-top: 0px;
 }
 
 a {
