@@ -28,8 +28,8 @@ ul {
 	margin-bottom: 0.5cm;
 }
 
-li {
-	padding-top:40px;
+ul li {
+	padding-top: 20px;
 }
 
 ul li li {
