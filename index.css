@@ -25,10 +25,11 @@ ul {
 }
 
 li {
-	padding:40px;
+	padding-top:40px;
 }
+
 ul li li {
-	margin-bottom:2cm;
+	padding-top:20px;
 }
 
 a {
