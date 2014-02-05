@@ -1,12 +1,11 @@
 body {
 background-image: url("green_cup.png");
-opacity: 0.3;
 
 }
 
 #name {
 	font-family: "Palatino Linotype";
-	font-size: 70px;
+	font-size: 100px;
 	font-style: italic;
 	text-align: center;
 }
