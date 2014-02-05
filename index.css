@@ -1,5 +1,6 @@
 body {
 background-image: url("green_cup.png");
+opacity: 0.3;
 
 }
 
@@ -7,6 +8,7 @@ background-image: url("green_cup.png");
 	font-family: "Palatino Linotype";
 	font-size: 70px;
 	font-style: italic;
+	text-align: center;
 }
 
 #right {
