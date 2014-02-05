@@ -3,7 +3,6 @@ body {
 
 }
 
-
 #name {
 	font-family: "Palatino Linotype";
 	font-size: 36pt;
@@ -19,11 +18,15 @@ ul {
 	margin-left: 1cm;
 }
 
+li {
+	padding:40px;
+}
+
 a {
 	font-family: "Palatino Linotype";
 	font-size: 34pt;
 	text-decoration: none;
-	padding:60px;
+	padding-right: 50px;
 }
 
 a:link{
