@@ -1,5 +1,6 @@
 body {
 background-image: url("green_cup.png");
+border-style:solid;
 
 }
 
@@ -8,9 +9,8 @@ background-image: url("green_cup.png");
 	font-size: 100px;
 	font-style: italic;
 	text-align: center;
+	margin-top
 }
 
-#right {
-	margin-left: 5cm;
-}
+
 
