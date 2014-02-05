@@ -10,10 +10,10 @@ body {
 
 #name {
 	font-family: "Palatino Linotype";
-	font-size: 48pt;
+	font-size: 26pt;
 	font-style: italic;
 	text-align: center;
-	margin-top: 2cm;
+	margin-top: 20px;
 }
 
 p {
@@ -23,3 +23,6 @@ p {
 }
 
 
+#center {
+	text-align: center;
+}
