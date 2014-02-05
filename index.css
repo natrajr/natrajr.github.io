@@ -13,13 +13,9 @@ body {
 	padding-bottom:10px;
 }
 
-p {
+.center {
+	display: inline;
 	text-align: center;
 	font-family: "Palatino Linotype";
 	font-size: 28pt;
-}
-
-
-#center p {
-	display: inline;
 }
