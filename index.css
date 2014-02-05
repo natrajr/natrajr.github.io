@@ -19,6 +19,7 @@ ul {
 }
 
 li {
+	border-style:dashed;
 	padding:40px;
 }
 
