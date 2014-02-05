@@ -1,4 +1,3 @@
-
 body {
 	background-image: url("green_cup.png");
 
@@ -15,12 +14,18 @@ body {
 
 h2 {
 	font-family: "Palatino Linotype";
-	font-size:32pt;
+	font-size:30pt;
 	text-align: right;
-	padding-right: 70px;
+	padding-right: 60px;
 	margin-top:0px;
 }
 
+#greeting {
+	color:#336633;
+	width:100px;
+	height:60px;
+	
+}
 ul {
 	list-style-type:none;
 	padding: 0px;
