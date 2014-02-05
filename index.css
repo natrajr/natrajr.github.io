@@ -20,10 +20,10 @@ ul {
 }
 
 a {
-	display: block;
 	font-family: "Palatino Linotype";
-	font-size: 28pt;
+	font-size: 34pt;
 	text-decoration: none;
+	padding-right:50px;
 }
 
 a:link{
