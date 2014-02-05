@@ -13,8 +13,14 @@ body {
 	font-size: 100px;
 	font-style: italic;
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 100px;
 }
 
+p {
+	text-align: center;
+	display: inline;
+	font-family: "Palatino Linotype";
+	font-size: 30px;
+}
 
 
