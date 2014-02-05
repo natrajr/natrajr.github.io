@@ -13,8 +13,8 @@ body {
 	padding-bottom:10px;
 }
 
-li {
-	display: inline;
+a {
 	font-family: "Palatino Linotype";
 	font-size: 28pt;
+	underline: none;
 }
