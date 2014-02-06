@@ -22,7 +22,7 @@ h2 {
 	text-decoration: underline;
 }
 	
-div {
+#block {
 
 	width:200px;
 	height:100px;
@@ -30,7 +30,7 @@ div {
 	transition-property: width;
 	transition-duration: 2s;
 }
-div:hover{
+#block:hover{
 	width: 300px;
 }
 
