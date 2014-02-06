@@ -1,4 +1,3 @@
-
 body {
 	background-image: url("green_cup.png");
 
@@ -23,7 +22,7 @@ h2 {
 	text-decoration: underline;
 }
 	
-#bio {
+div {
 
 	width:200px;
 	height:100px;
@@ -31,20 +30,10 @@ h2 {
 	transition-property: width;
 	transition-duration: 2s;
 }
-#bio:hover{
+div:hover{
 	width: 300px;
 }
-#resume {
 
-	width:200px;
-	height:100px;
-	background:blue;
-	transition-property: width;
-	transition-duration: 2s;
-}
-#resume:hover{
-	width: 300px;
-}
 
 a {
 	font-family: "Palatino Linotype";
