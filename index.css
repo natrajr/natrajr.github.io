@@ -10,6 +10,7 @@ body {
 	text-align: center;
 	margin-top: 20px;
 	padding-bottom:5px;
+	margin-right:30px;
 }
 
 h2 {
@@ -21,10 +22,16 @@ h2 {
 }
 
 #greeting {
-	color:#336633;
+
 	width:100px;
-	height:60px;
-	
+	height:100px;
+	background:green;
+	transition-property: width;
+	transition-duration: 2s;
+}
+#greeting:hover{
+	width: 200px;
+}	
 }
 ul {
 	list-style-type:none;
