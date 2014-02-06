@@ -13,11 +13,11 @@ h1 {
 p {
 	text-align:center;
 	font-size:24pt;
-	color:#CCCC66;
+	color:#FF6600;
 }
 
 
 span p {
-	font-weight:bold;
+	font-style:italic;
 }
 
