@@ -22,8 +22,8 @@ h2 {
 	margin-top:0px;
 	text-decoration: underline;
 }
-
-#greeting {
+	
+#bio {
 
 	width:200px;
 	height:100px;
@@ -31,14 +31,19 @@ h2 {
 	transition-property: width;
 	transition-duration: 2s;
 }
-#greeting:hover{
+#bio:hover{
 	width: 300px;
-}	
-ul {
-	list-style-type:none;
-	padding: 0px;
-	margin-left: 1cm;
-	margin-bottom: 0.5cm;
+}
+#resume {
+
+	width:200px;
+	height:100px;
+	background:blue;
+	transition-property: width;
+	transition-duration: 2s;
+}
+#resume:hover{
+	width: 300px;
 }
 
 a {
