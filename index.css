@@ -21,15 +21,6 @@ h2 {
 	margin-top:0px;
 	text-decoration: underline;
 }
-div #bio{
-	width:200px;
-	height:100px;
-	background:green;
-	transition-property: width;
-	transition-duration: 2s;
-}
-div #bio:hover{
-	width: 300px;
 }
 a {
 	font-family: "Palatino Linotype";
@@ -37,7 +28,7 @@ a {
 	text-decoration: none;
 	padding-right: 50px;
 	padding-left:0px;
-	margin-left:0px;
+	margin-left:30px;
 }
 
 a:link{
