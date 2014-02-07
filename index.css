@@ -1,4 +1,3 @@
-
 body {
 	background-image: url("green_cup.png");
 
@@ -22,19 +21,6 @@ h2 {
 	margin-top:0px;
 	text-decoration: underline;
 }
-	
-#block {
-
-	width:200px;
-	height:100px;
-	background:green;
-	transition-property: width;
-	transition-duration: 2s;
-}
-#block:hover{
-	width: 300px;
-}
-
 
 a {
 	font-family: "Palatino Linotype";
