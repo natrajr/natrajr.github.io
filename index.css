@@ -21,13 +21,13 @@ h2 {
 	margin-top:0px;
 	text-decoration: underline;
 }
-a {
+p {
 	font-family: "Palatino Linotype";
 	font-size: 34pt;
-	text-decoration: none;
 	text-align:left;
 }
-
+a {text-decoration: none;
+}
 a:link{
 	color:black;
 }
