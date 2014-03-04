@@ -1,25 +1,26 @@
 body {
 	background-color: #ba8212;
 	background-image: url(./brushed-alum.png);
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
 }
 
 #name {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 36pt;
-	font-weight: 300;
 	text-align: center;
-	margin-top: 30px;
-	padding-bottom:5px;
+	margin-top: 50px;
 }
 
-p {
-	font-family: "Palatino Linotype";
+#links {
+	font-family: 'Open Sans', sans-serif;
 	font-size: 34pt;
 	text-align:center;
 }
-a {text-decoration: none;
+a {
+	text-decoration: none;
+	
+}
+a:hover {
+	color:white;
 }
 a:link{
 	color:black;
