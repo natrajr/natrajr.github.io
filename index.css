@@ -5,14 +5,14 @@ body {
 
 #name {
 	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 36pt;
+	font-size: 64px;
 	text-align: center;
 	margin-top: 50px;
 }
 
 #links {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 34pt;
+	font-size: 28px;
 	text-align:center;
 }
 a {
