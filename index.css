@@ -6,9 +6,8 @@ body {
 }
 
 #name {
-	font-family: "Palatino Linotype";
+	font-family: 'Open Sans', sans-serif;
 	font-size: 36pt;
-	font-style: italic;
 	text-align: center;
 	margin-top: 30px;
 	padding-bottom:5px;
@@ -17,23 +16,17 @@ body {
 p {
 	font-family: "Palatino Linotype";
 	font-size: 34pt;
-	text-align:right;
+	text-align:center;
 }
 a {text-decoration: none;
 }
 a:link{
 	color:black;
 }
-a:hover{
-	color:white;
 }
 a:visited {
 	color:purple;
 }
 
-img.calvin {
-	margin-right:0px;
-	width: 600px;
-}
 
 
