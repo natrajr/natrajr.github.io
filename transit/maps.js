@@ -118,7 +118,6 @@ function init_data() {
 	xhr.onreadystatechange= callback; 
 }
 function callback() {
-	console.log("inside callback");
 	if (xhr.readyState==4 && xhr.status==200) {
 		mbtaData=JSON.parse(xhr.responseText);
 		whichLine();
@@ -173,12 +172,15 @@ function whichLine() {
 	}
 }
 
+
+
 function redLine() {
 	var redCoords=[];
 	for (i=0; i<stations.length; i++) {
 		if (stations[i].Line=="Red") {
 			var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
 			redCoords[i]=stop_pos;
+			console.log(redCoords);
 		}
 	}
 	var stationLines = new google.maps.Polyline({
@@ -211,6 +213,7 @@ function orangeLine() {
 		if (stations[i].Line=="Orange") {
 			var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
 			orangeCoords[i]=stop_pos;
+			console.log(redCoords);
 		}
 	}
 		var stationLines = new google.maps.Polyline({
