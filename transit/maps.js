@@ -118,6 +118,7 @@ function init_data() {
 	xhr.onreadystatechange= callback; 
 }
 function callback() {
+	console.log("inside callback");
 	if (xhr.readyState==4 && xhr.status==200) {
 		mbtaData=JSON.parse(xhr.responseText);
 		whichLine();
