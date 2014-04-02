@@ -117,6 +117,7 @@ function init_data() {
 	xhr.onreadystatechange= function() {
 		if (xhr.readyState==4 && xhr.status==200) {
 			mbtaData=xhr.responseText;
+			console.log("got responseText");
 			display_line();
 		}
 		else if (xhr.readyState==4 && xhr.status==500) {
@@ -156,6 +157,7 @@ function display_line() {
 	var redCoords=[];
 	var orangeCoords=[];
 	var blueCoords=[];
+	console.log("in display_line");
 
 	if (mbtaData.line=="red") {
 		for (i=0; i<stations.length; i++) {
