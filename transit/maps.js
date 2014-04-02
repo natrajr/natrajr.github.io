@@ -230,7 +230,7 @@ function displayLine(lineColor, hexColor) {
   		return coords;
 }
 
-function ClosestStation(lineColor) {
+function ClosestStation(lineColor, coords) {
 
 	console.log(coords);
 
