@@ -77,6 +77,7 @@ function init_map() {
 
 	theMap =new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 	getMyLocation();
+	renderMap();
 }
 
 function getMyLocation() 
@@ -86,7 +87,6 @@ function getMyLocation()
 			myLat=position.coords.latitude;
 			myLng=position.coords.longitude;
 			myLoc= new google.maps.LatLng(myLat, myLng);
-			renderMap();
 		});
 	}
 	else {
@@ -94,9 +94,7 @@ function getMyLocation()
 	}
 }
 
-
 function renderMap() {
-
 	myLoc=new google.maps.LatLng(myLat,myLng);
 	theMap.panTo(myLoc);
 	
@@ -113,18 +111,19 @@ function renderMap() {
 
 }
 function init_data() {
-	xhr= new XMLHttpRequest();
-	xhr.onreadystatechange= function() {
-		if (xhr.readyState==4 && xhr.status==200) {
-			mbtaData=JSON.parse(xhr.responseText);
-			whichLine();
-		}
-		else if (xhr.readyState==4 && xhr.status==500) {
-			alert("Error Retrieving MBTA Data");
-		}
-	}
+	var xhr= new XMLHttpRequest();
 	xhr.open("GET", "http://mbtamap.herokuapp.com/mapper/rodeo.json", true);
 	xhr.send(null);
+	xhr.onreadystatechange= callback; 
+}
+function callback() {
+	if (xhr.readyState==4 && xhr.status==200) {
+		mbtaData=JSON.parse(xhr.responseText);
+		whichLine();
+	}
+	else if (xhr.readyState==4 && xhr.status==500) {
+		alert("Error Retrieving MBTA Data");
+	}
 }
 
 function getDistance(lat1, lng1, lat2, lng2) {
