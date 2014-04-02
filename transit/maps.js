@@ -157,7 +157,7 @@ function display_line() {
 	var redCoords=[];
 	var orangeCoords=[];
 	var blueCoords=[];
-	console.log("in display_line");
+	console.log(mbtaData.line);
 
 	if (mbtaData.line=="red") {
 		for (i=0; i<stations.length; i++) {
