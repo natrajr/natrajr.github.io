@@ -188,6 +188,7 @@ function redLine() {
 				position: stop_pos,
 				map: theMap,
 				title: stations[i].Station
+				icon: "./icon.png"
 				});
 			}
 			else {
@@ -198,6 +199,7 @@ function redLine() {
 				position: stop_pos,
 				map: theMap,
 				title: stations[i].Station
+				icon: "./icon.png"
 				});
 			}
 		}
@@ -232,6 +234,7 @@ function displayLine(lineColor, hexColor) {
 				position: stop_pos,
 				map: theMap,
 				title: stations[i].Station
+				icon: "./icon.png"
 				});
 			}
 		}
