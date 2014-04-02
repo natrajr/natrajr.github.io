@@ -251,7 +251,6 @@ function ClosestStation(lineColor, coords) {
 				}
 			}
 		}
-	var minimum=Math.min.apply(Math, distances);
 
 	infoWindow=new google.maps.InfoWindow();
 	infoWindow.open(theMap, Mymarker);
