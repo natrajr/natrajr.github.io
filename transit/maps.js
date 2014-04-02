@@ -103,14 +103,14 @@ function renderMap() {
 	Mymarker=new google.maps.Marker({
 		position: myLoc,
 		map: theMap,
-		title: "Click the Marker to See the Closest T Station"
+		title: "Click to See the Closest T Station"
 	});
 	
 	infoWindow=new google.maps.InfoWindow();
 	infoWindow.open(theMap, Mymarker);
 	infoWindow.setContent("Click The Marker");
-	init_data();
-
+	
+	google.maps.event.addListener(Mymarker, "click", init_data());
 }
 function init_data() {
 	xhr= new XMLHttpRequest();
@@ -172,8 +172,6 @@ function whichLine() {
 
 	}
 }
-
-
 
 function redLine() {
 	var redCoords=[];
