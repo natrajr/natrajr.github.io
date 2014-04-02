@@ -217,9 +217,14 @@ function displayLine(lineColor, hexColor) {
 				var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
 				coords[count]=stop_pos;
 				count+=1;
-				}
-			}
 
+			var stationMarker = new google.maps.Marker({ 
+				position: stop_pos,
+				map: theMap,
+				title: stations[i].Station
+				});
+			}
+		}
 	var stationLines = new google.maps.Polyline({
     	path: coords,
     	strokeColor: hexColor,
