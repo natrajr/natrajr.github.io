@@ -117,7 +117,7 @@ function init_data() {
 	xhr.onreadystatechange= function() {
 		if (xhr.readyState==4 && xhr.status==200) {
 			mbtaData=xhr.responseText;
-			console.log("got responseText");
+			console.log(mbtaData);
 			display_line();
 		}
 		else if (xhr.readyState==4 && xhr.status==500) {
