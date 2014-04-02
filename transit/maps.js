@@ -188,7 +188,7 @@ function redLine() {
 				var stationMarker = new google.maps.Marker({ 
 				position: stop_pos,
 				map: theMap,
-				title: stations[i].Station
+				title: stations[i].Station,
 				icon: iconImage
 				});
 			}
@@ -199,7 +199,7 @@ function redLine() {
 				var stationMarker = new google.maps.Marker({ 
 				position: stop_pos,
 				map: theMap,
-				title: stations[i].Station
+				title: stations[i].Station,
 				icon: iconImage
 				});
 			}
@@ -235,7 +235,7 @@ function displayLine(lineColor, hexColor) {
 			var stationMarker = new google.maps.Marker({ 
 				position: stop_pos,
 				map: theMap,
-				title: stations[i].Station
+				title: stations[i].Station,
 				icon: iconImage
 				});
 			}
