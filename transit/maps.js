@@ -193,19 +193,20 @@ function redLine() {
 				count2+=1;
 			}
 		}
+	}
 	var stationLines = new google.maps.Polyline({
     	path: redCoords,
     	strokeColor: "#FF0000",
-    	strokeOpacity: 0.7,
-    	strokeWeight: 5
+    	strokeOpacity: 0.8,
+    	strokeWeight: 4
   		});
   		stationLines.setMap(theMap);
 
   	var stationLines2= new google.maps.Polyline({
     	path: redCoords2,
     	strokeColor: "#FF0000",
-    	strokeOpacity: 0.7,
-    	strokeWeight: 5
+    	strokeOpacity: 0.8,
+    	strokeWeight: 4
   		});
   		stationLines2.setMap(theMap);
 }
@@ -223,8 +224,8 @@ function blueLine() {
 		var stationLines = new google.maps.Polyline({
     	path: blueCoords,
     	strokeColor: "#0000FF",
-    	strokeOpacity: 0.7,
-    	strokeWeight: 5
+    	strokeOpacity: 0.8,
+    	strokeWeight: 4
 		});
 		stationLines.setMap(theMap);
 }
@@ -241,9 +242,9 @@ function orangeLine() {
 	lineArray=orangeCoords;
 		var stationLines = new google.maps.Polyline({
     	path: orangeCoords,
-    	strokeColor: "#FFA500",
-    	strokeOpacity: 0.7,
-    	strokeWeight: 5
+    	strokeColor: "#FA8107",
+    	strokeOpacity: 0.8,
+    	strokeWeight: 4
 		});
 
 		stationLines.setMap(theMap);
