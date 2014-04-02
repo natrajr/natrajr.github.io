@@ -199,6 +199,7 @@ function blueLine() {
 				blueCoords[i]=stop_pos;
 				}
 			}
+		lineArray=blueCoords;
 		var stationLines = new google.maps.Polyline({
     	path: blueCoords,
     	strokeColor: "#0000FF",
