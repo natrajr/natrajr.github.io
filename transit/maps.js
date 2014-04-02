@@ -103,14 +103,9 @@ function renderMap() {
 	Mymarker=new google.maps.Marker({
 		position: myLoc,
 		map: theMap,
-		title: "Click to See the Closest T Station"
+		title: "Your Location"
 	});
 	
-	infoWindow=new google.maps.InfoWindow();
-	infoWindow.open(theMap, Mymarker);
-	infoWindow.setContent("Click The Marker");
-	
-	google.maps.event.addListener(Mymarker, "click", init_data());
 }
 function init_data() {
 	xhr= new XMLHttpRequest();
@@ -122,6 +117,7 @@ function callback() {
 	if (xhr.readyState==4 && xhr.status==200) {
 		mbtaData=JSON.parse(xhr.responseText);
 		whichLine();
+		ClosestStation();
 	}
 	else if (xhr.readyState==4 && xhr.status==500) {
 		alert("Error Retrieving MBTA Data");
@@ -229,4 +225,9 @@ function displayLine(lineColor, hexColor) {
   		stationLines.setMap(theMap);
 }
 
-//function ClosestStation()
+function ClosestStation() {
+
+	infoWindow=new google.maps.InfoWindow();
+	infoWindow.open(theMap, Mymarker);
+	infoWindow.setContent("Click The Marker");
+}
