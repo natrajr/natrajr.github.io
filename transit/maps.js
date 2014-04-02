@@ -179,18 +179,20 @@ function redLine() {
 	var redCoords=[];
 	var redCoords2=[];
 	var count=0;
+	var count2=0;
 	for (i=0; i<stations.length; i++) {
-		if (stations[i].Line=="Red") {
-			var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
-			redCoords[count]=stop_pos;
-			count+=1;
+		if (stations[i].Line=="Red" || "Red2") {
+ 			if (stations[i].Line=="Red") {
+				var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
+				redCoords[count]=stop_pos;
+				count+=1;
+			}
+			else {
+				var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
+				redCoords2[count2]=stop_pos;
+				count2+=1;
+			}
 		}
-		else if (stations[i].Line=="Red2") {
-			var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
-			redCoords2[count]=stop_pos;
-			count+=1;
-		}
-	}
 	var stationLines = new google.maps.Polyline({
     	path: redCoords,
     	strokeColor: "#FF0000",
@@ -198,6 +200,7 @@ function redLine() {
     	strokeWeight: 5
   		});
   		stationLines.setMap(theMap);
+
   	var stationLines2= new google.maps.Polyline({
     	path: redCoords2,
     	strokeColor: "#FF0000",
