@@ -156,7 +156,7 @@ function whichLine() {
 	switch(lineType) {
 		case "red":
 			redLine();
-			ClosestStation("Red", "Red2");
+			ClosestStation("Red");
 			break;
 		case "orange":
 			displayLine("Orange", "#FA8107");
