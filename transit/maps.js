@@ -176,10 +176,12 @@ function whichLine() {
 
 function redLine() {
 	var redCoords=[];
+	var count=0;
 	for (i=0; i<stations.length; i++) {
 		if (stations[i].Line=="Red") {
 			var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
-			redCoords[i]=stop_pos;
+			redCoords[count]=stop_pos;
+			count+=1;
 		}
 	}
 	lineArray=redCoords;
@@ -193,10 +195,12 @@ function redLine() {
 }
 function blueLine() {
 	var blueCoords=[];
+	var count=0;
 	for (i=0; i<stations.length; i++) {
 			if (stations[i].Line=="Blue") {
 				var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
-				blueCoords[i]=stop_pos;
+				blueCoords[count]=stop_pos;
+				count+=1;
 				}
 			}
 		lineArray=blueCoords;
@@ -210,10 +214,12 @@ function blueLine() {
 }
 function orangeLine() {
 		var orangeCoords=[];
+		var count=0;
 	for (i=0; i<stations.length; i++) {
 		if (stations[i].Line=="Orange") {
 			var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
-			orangeCoords[i]=stop_pos;
+			orangeCoords[count]=stop_pos;
+			count+=1;
 		}
 	}
 	lineArray=orangeCoords;
