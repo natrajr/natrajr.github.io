@@ -116,7 +116,7 @@ function init_data() {
 	xhr= new XMLHttpRequest();
 	xhr.onreadystatechange= function() {
 		if (xhr.readyState==4 && xhr.status==200) {
-			mbtaData=xhr.responseText;
+			mbtaData=JSON.parse(xhr.responseText);
 			console.log(mbtaData);
 			display_line();
 		}
