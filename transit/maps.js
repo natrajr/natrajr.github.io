@@ -198,6 +198,13 @@ function redLine() {
     	strokeWeight: 5
   		});
   		stationLines.setMap(theMap);
+  	var stationLines2= new google.maps.Polyline({
+    	path: redCoords2,
+    	strokeColor: "#FF0000",
+    	strokeOpacity: 0.7,
+    	strokeWeight: 5
+  		});
+  		stationLines2.setMap(theMap);
 }
 function blueLine() {
 	var blueCoords=[];
@@ -231,7 +238,7 @@ function orangeLine() {
 	lineArray=orangeCoords;
 		var stationLines = new google.maps.Polyline({
     	path: orangeCoords,
-    	strokeColor: "#FF6103",
+    	strokeColor: "#FFA500",
     	strokeOpacity: 0.7,
     	strokeWeight: 5
 		});
