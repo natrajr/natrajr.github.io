@@ -117,8 +117,7 @@ function init_data() {
 	xhr.onreadystatechange= function() {
 		if (xhr.readyState==4 && xhr.status==200) {
 			mbtaData=JSON.parse(xhr.responseText);
-			console.log(mbtaData);
-			display_line();
+			whichLine();
 		}
 		else if (xhr.readyState==4 && xhr.status==500) {
 			alert("Error Retrieving MBTA Data");
@@ -127,7 +126,7 @@ function init_data() {
 	xhr.open("GET", "http://mbtamap.herokuapp.com/mapper/rodeo.json", true);
 	xhr.send(null);
 }
-/*
+
 function getDistance(lat1, lng1, lat2, lng2) {
 	Number.prototype.toRad = function() 
 	{
@@ -152,34 +151,49 @@ function getDistance(lat1, lng1, lat2, lng2) {
 
     return d;
 }
-*/
-function display_line() {
-	var redCoords=[];
-	var orangeCoords=[];
-	var blueCoords=[];
-	console.log(mbtaData.line);
 
-	if (mbtaData.line=="red") {
-		for (i=0; i<stations.length; i++) {
-			if (stations[i].Line=="Red") {
-				redCoords[i]=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
-				console.log("filled red coords");
-			}
+function whichLine() {
+	var lineType=mbtaData.line;
+
+	switch(lineType) {
+		case "red":
+			redLine();
+			break;
+		case "orange":
+			orangeLine();
+			break;
+		case "blue":
+			blueLine();
+			break;
+		default:
+			alert("Error Retrieing MBTA data");
+
+
+	}
+}
+
+function redLine() {
+	var redCoords=[];
+	for (i=0; i<stations.length; i++) {
+		if (stations[i].Line=="Red") {
+			var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
+			redCoords[i]=stop_pos;
 		}
-		var stationLines = new google.maps.Polyline({
+	}
+	var stationLines = new google.maps.Polyline({
     	path: redCoords,
     	strokeColor: "#FF0000",
     	strokeOpacity: 0.7,
     	strokeWeight: 5
   		});
   		stationLines.setMap(theMap);
-	}
-	else if (mbtaData.line=="blue") {
-		for (i=0; i<stations.length; i++) {
+}
+function blueLine() {
+	var blueCoords=[];
+	for (i=0; i<stations.length; i++) {
 			if (stations[i].Line=="Blue") {
-				var blueStops=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
-				blueCoords[i]=blueStops;
-				console.log("filled red coords");
+				var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
+				blueCoords[i]=stop_pos;
 				}
 			}
 		var stationLines = new google.maps.Polyline({
@@ -189,35 +203,25 @@ function display_line() {
     	strokeWeight: 5
 		});
 		stationLines.setMap(theMap);
-	}
-	else if (mbtaData.line=="orange") {
-		for (i=0; i<stations.length; i++) {
-			if (stations[i].Line=="Orange") {
-				var orangeStops=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
-				orangeCoords[i]=orangeStops;
-				console.log("filled red coords");
-			}
+}
+function orangeLine() {
+		var orangeCoords=[];
+	for (i=0; i<stations.length; i++) {
+		if (stations[i].Line=="Orange") {
+			var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
+			orangeCoords[i]=stop_pos;
 		}
+	}
 		var stationLines = new google.maps.Polyline({
     	path: orangeCoords,
-    	strokeColor: "#FF6600",
+    	strokeColor: "#0000FF",
     	strokeOpacity: 0.7,
     	strokeWeight: 5
 		});
+
 		stationLines.setMap(theMap);
-	}
-}
-/*
-function closestStation() {
-
-
-		google.maps.event.addListener(Mymarker, 'click', function() {
-		infoWindow.open(theMap, Mymarker);
-		infoWindow.setContent(
 }
 
 
-function MapStations() {
 
-}
-*/
+//function closestStation() {}
