@@ -1,6 +1,7 @@
 
 
-var stations=[{"Line":"Blue","Station":"Wonderland","stop_lat":42.41342,"stop_lon":-70.991648},
+var stations=[
+{"Line":"Blue","Station":"Wonderland","stop_lat":42.41342,"stop_lon":-70.991648},
 {"Line":"Blue","Station":"Revere Beach","stop_lat":42.40784254,"stop_lon":-70.99253321},
 {"Line":"Blue","Station":"Beachmont","stop_lat":42.39754234,"stop_lon":-70.99231944},
 {"Line":"Blue","Station":"Suffolk Downs","stop_lat":42.39050067,"stop_lon":-70.99712259},
@@ -45,7 +46,7 @@ var stations=[{"Line":"Blue","Station":"Wonderland","stop_lat":42.41342,"stop_lo
 {"Line":"Red","Station":"Andrew","stop_lat":42.330154,"stop_lon":-71.057655},
 {"Line":"Red","Station":"JFK/UMass","stop_lat":42.320685,"stop_lon":-71.052391},
 {"Line":"Red","Station":"North Quincy","stop_lat":42.275275,"stop_lon":-71.029583},
-{"Line":"Red","Station":"Wollaston","stop_lat":42.2665139,"stop_lon":-71.0203369}
+{"Line":"Red","Station":"Wollaston","stop_lat":42.2665139,"stop_lon":-71.0203369},
 {"Line":"Red","Station":"Quincy Center","stop_lat":42.251809,"stop_lon":-71.005409},
 {"Line":"Red","Station":"Quincy Adams","stop_lat":42.233391,"stop_lon":-71.007153},
 {"Line":"Red","Station":"Braintree","stop_lat":42.2078543,"stop_lon":-71.0011385},
