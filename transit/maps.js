@@ -145,7 +145,7 @@ function getDistance(lat1, lng1, lat2, lng2) {
 
     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
 
-    var d = radius * c;
+    var d = rad * c;
 
     return d;
 }
