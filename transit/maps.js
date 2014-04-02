@@ -112,7 +112,7 @@ function renderMap() {
 
 }
 function init_data() {
-	var xhr= new XMLHttpRequest();
+	xhr= new XMLHttpRequest();
 	xhr.open("GET", "http://mbtamap.herokuapp.com/mapper/rodeo.json", true);
 	xhr.send(null);
 	xhr.onreadystatechange= callback; 
