@@ -156,6 +156,7 @@ function whichLine() {
 	switch(lineType) {
 		case "red":
 			redLine();
+			ClosestStation("Red", "Red2");
 			break;
 		case "orange":
 			displayLine("Orange", "#FA8107");
@@ -235,7 +236,7 @@ function ClosestStation(lineColor, lineColor2) {
 	var stationName;
 
 	for (i=0; i<stations.length; i++) {
-			if (stations[i].Line==lineColor) {
+			if (stations[i].Line==lineColor || stations[i].Line== "Red2") {
 				var d= getDistance(myLat, myLng, stations[i].stop_lat, stations[i].stop_lon);
 				if (cnt==0) {
  					distance=d;
@@ -252,5 +253,5 @@ function ClosestStation(lineColor, lineColor2) {
 		}
 	infoWindow=new google.maps.InfoWindow();
 	infoWindow.open(theMap, Mymarker);
-	infoWindow.setContent("The Closest"+ " " + lineColor+ " " + "Line Station is" + " " + stationName +":" + distance.toFixed(2)+ "mi away");
+	infoWindow.setContent("The Closest"+ " " + lineColor+ " " + "Line Station is" + " " + stationName +":" + " " + distance.toFixed(2)+ "mi away");
 }
