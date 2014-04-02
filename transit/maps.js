@@ -105,6 +105,7 @@ function renderMap() {
 		map: theMap,
 		title: "Your Location"
 	});
+	
 	init_data();
 
 }
