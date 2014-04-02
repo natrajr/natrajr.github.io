@@ -180,9 +180,9 @@ function redLine() {
 		if (stations[i].Line=="Red") {
 			var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
 			redCoords[i]=stop_pos;
-			console.log(redCoords);
 		}
 	}
+	console.log(redCoords);
 	var stationLines = new google.maps.Polyline({
     	path: redCoords,
     	strokeColor: "#FF0000",
@@ -213,9 +213,9 @@ function orangeLine() {
 		if (stations[i].Line=="Orange") {
 			var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
 			orangeCoords[i]=stop_pos;
-			console.log(redCoords);
 		}
 	}
+	console.log(orangeCoords);
 		var stationLines = new google.maps.Polyline({
     	path: orangeCoords,
     	strokeColor: "#0000FF",
