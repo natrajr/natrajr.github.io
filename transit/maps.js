@@ -178,6 +178,7 @@ function redLine() {
 	var redCoords2=[];
 	var count=0;
 	var count2=0;
+	var iconImage= "./icon.png";
 	for (i=0; i<stations.length; i++) {
 		if (stations[i].Line=="Red" || stations[i].Line== "Red2") {
  			if (stations[i].Line=="Red") {
@@ -188,7 +189,7 @@ function redLine() {
 				position: stop_pos,
 				map: theMap,
 				title: stations[i].Station
-				icon: "./icon.png"
+				icon: iconImage
 				});
 			}
 			else {
@@ -199,7 +200,7 @@ function redLine() {
 				position: stop_pos,
 				map: theMap,
 				title: stations[i].Station
-				icon: "./icon.png"
+				icon: iconImage
 				});
 			}
 		}
@@ -224,6 +225,7 @@ function redLine() {
 function displayLine(lineColor, hexColor) {
 	var coords=[];
 	var count=0;
+	var iconImage= "./icon.png";
 	for (i=0; i<stations.length; i++) {
 			if (stations[i].Line==lineColor) {
 				var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
@@ -234,7 +236,7 @@ function displayLine(lineColor, hexColor) {
 				position: stop_pos,
 				map: theMap,
 				title: stations[i].Station
-				icon: "./icon.png"
+				icon: iconImage
 				});
 			}
 		}
