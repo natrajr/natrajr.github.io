@@ -119,7 +119,6 @@ function callback() {
 	if (xhr.readyState==4 && xhr.status==200) {
 		mbtaData=JSON.parse(xhr.responseText);
 		whichLine();
-		ClosestStation();
 	}
 	else if (xhr.readyState==4 && xhr.status==500) {
 		alert("Error Retrieving MBTA Data");
@@ -160,9 +159,11 @@ function whichLine() {
 			break;
 		case "orange":
 			displayLine("Orange", "#FA8107");
+			ClosestStation("Orange");
 			break;
 		case "blue":
 			displayLine("Blue","#0000FF");
+			ClosestStation("Blue");
 			break;
 		default:
 			alert("Error Retrieing MBTA data");
@@ -225,9 +226,13 @@ function displayLine(lineColor, hexColor) {
     	strokeWeight: 4
   		});
   		stationLines.setMap(theMap);
+
+  	for (i=0; i<coords.length; i++;) {
+  		getDistance(myLat, myLng, )
+  	}
 }
 
-function ClosestStation() {
+function ClosestStation(lineColor) {
 
 	infoWindow=new google.maps.InfoWindow();
 	infoWindow.open(theMap, Mymarker);
