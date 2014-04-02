@@ -184,11 +184,21 @@ function redLine() {
 				var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
 				redCoords[count]=stop_pos;
 				count+=1;
+				var stationMarker = new google.maps.Marker({ 
+				position: stop_pos,
+				map: theMap,
+				title: stations[i].Station
+				});
 			}
 			else {
 				var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
 				redCoords2[count2]=stop_pos;
 				count2+=1;
+				var stationMarker = new google.maps.Marker({ 
+				position: stop_pos,
+				map: theMap,
+				title: stations[i].Station
+				});
 			}
 		}
 	}
