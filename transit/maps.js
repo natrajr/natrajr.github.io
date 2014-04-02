@@ -66,7 +66,7 @@ var myLoc;
 var infoWindow;
 var mbtaData={};
 var xhr;
-
+var lineArray;
 
 function init_map() {
 
@@ -182,7 +182,7 @@ function redLine() {
 			redCoords[i]=stop_pos;
 		}
 	}
-	console.log(redCoords);
+	lineArray=redCoords;
 	var stationLines = new google.maps.Polyline({
     	path: redCoords,
     	strokeColor: "#FF0000",
@@ -215,7 +215,7 @@ function orangeLine() {
 			orangeCoords[i]=stop_pos;
 		}
 	}
-	console.log(orangeCoords);
+	lineArray=orangeCoords;
 		var stationLines = new google.maps.Polyline({
     	path: orangeCoords,
     	strokeColor: "#0000FF",
