@@ -227,14 +227,33 @@ function displayLine(lineColor, hexColor) {
   		});
   		stationLines.setMap(theMap);
 
-  		return coords;
 }
 
 function ClosestStation(lineColor, coords) {
 
-	console.log(coords);
+	var distance=0;
+	var cnt=0;
+	var stationName;
+
+	for (i=0; i<stations.length; i++) {
+			if (stations[i].Line==lineColor) {
+				var d= getDistance(myLat, myLng, stations[i].stop_lat, stations[i].stop_lon);
+				if (cnt==0) {
+ 					distance=d;
+ 					cnt++;
+				}
+				else 
+				{
+					if (d<distance) {
+						distance=d;
+						stationName=stations[i].Station;
+					}
+				}
+			}
+		}
+	var minimum=Math.min.apply(Math, distances);
 
 	infoWindow=new google.maps.InfoWindow();
 	infoWindow.open(theMap, Mymarker);
-	infoWindow.setContent("Click The Marker");
+	infoWindow.setContent(distance);
 }
