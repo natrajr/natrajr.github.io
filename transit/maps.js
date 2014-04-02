@@ -252,5 +252,5 @@ function ClosestStation(lineColor, lineColor2) {
 		}
 	infoWindow=new google.maps.InfoWindow();
 	infoWindow.open(theMap, Mymarker);
-	infoWindow.setContent("The Closest"+ " " + lineColor+ " " + "Line Station is" + " " + stationName +":" + distance.toString()+ "mi away");
+	infoWindow.setContent("The Closest"+ " " + lineColor+ " " + "Line Station is" + " " + stationName +":" + distance.toFixed(2)+ "mi away");
 }
