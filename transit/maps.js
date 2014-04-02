@@ -181,7 +181,7 @@ function redLine() {
 	var count=0;
 	var count2=0;
 	for (i=0; i<stations.length; i++) {
-		if (stations[i].Line=="Red" || "Red2") {
+		if (stations[i].Line=="Red" || stations[i].Line== "Red2") {
  			if (stations[i].Line=="Red") {
 				var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
 				redCoords[count]=stop_pos;
