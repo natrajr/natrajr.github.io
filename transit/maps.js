@@ -226,9 +226,13 @@ function displayLine(lineColor, hexColor) {
     	strokeWeight: 4
   		});
   		stationLines.setMap(theMap);
+
+  		return coords;
 }
 
 function ClosestStation(lineColor) {
+
+	console.log(coords);
 
 	infoWindow=new google.maps.InfoWindow();
 	infoWindow.open(theMap, Mymarker);
