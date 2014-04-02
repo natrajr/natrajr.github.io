@@ -65,6 +65,7 @@ var myLat=0;
 var myLoc;
 var infoWindow;
 var mbtaData={};
+var xhr;
 
 
 function init_map() {
