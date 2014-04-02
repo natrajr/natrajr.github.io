@@ -254,5 +254,5 @@ function ClosestStation(lineColor, coords) {
 
 	infoWindow=new google.maps.InfoWindow();
 	infoWindow.open(theMap, Mymarker);
-	infoWindow.setContent(stationName + distance.toString());
+	infoWindow.setContent("The Closest"+ " " + lineColor+ " " + "Line Station is" + " " + stationName +":" distance.toString()+ "mi away");
 }
