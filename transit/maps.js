@@ -117,7 +117,6 @@ function callback() {
 	if (xhr.readyState==4 && xhr.status==200) {
 		mbtaData=JSON.parse(xhr.responseText);
 		whichLine();
-		ClosestStation();
 	}
 	else if (xhr.readyState==4 && xhr.status==500) {
 		alert("Error Retrieving MBTA Data");
@@ -203,6 +202,8 @@ function redLine() {
     	strokeWeight: 4
   		});
   		stationLines2.setMap(theMap);
+
+  	ClosestStation();
 }
 
 function displayLine(lineColor, hexColor) {
@@ -223,6 +224,7 @@ function displayLine(lineColor, hexColor) {
     	strokeWeight: 4
   		});
   		stationLines.setMap(theMap);
+  	ClosestStation();
 }
 
 function ClosestStation() {
