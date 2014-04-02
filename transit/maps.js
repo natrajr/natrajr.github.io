@@ -78,7 +78,6 @@ function init_map() {
 
 	theMap =new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 	getMyLocation();
-	renderMap();
 }
 
 function getMyLocation() 
@@ -88,6 +87,7 @@ function getMyLocation()
 			myLat=position.coords.latitude;
 			myLng=position.coords.longitude;
 			myLoc= new google.maps.LatLng(myLat, myLng);
+			renderMap();
 		});
 	}
 	else {
