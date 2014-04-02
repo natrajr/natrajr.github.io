@@ -161,10 +161,10 @@ function whichLine() {
 			redLine();
 			break;
 		case "orange":
-			orangeLine();
+			displayLine("Orange", "#FA8107");
 			break;
 		case "blue":
-			blueLine();
+			displayLine("Blue","#0000FF");
 			break;
 		default:
 			alert("Error Retrieing MBTA data");
@@ -210,6 +210,27 @@ function redLine() {
   		});
   		stationLines2.setMap(theMap);
 }
+
+function displayLine(lineColor, hexColor) {
+	var coords=[];
+	var count=0;
+	for (i=0; i<stations.length; i++) {
+			if (stations[i].Line==lineColor) {
+				var stop_pos=new google.maps.LatLng(stations[i].stop_lat, stations[i].stop_lon);
+				coords[count]=stop_pos;
+				count+=1;
+				}
+			}
+
+	var stationLines = new google.maps.Polyline({
+    	path: coords,
+    	strokeColor: hexColor,
+    	strokeOpacity: 0.8,
+    	strokeWeight: 4
+  		});
+  		stationLines.setMap(theMap);
+}
+/*
 function blueLine() {
 	var blueCoords=[];
 	var count=0;
@@ -250,6 +271,4 @@ function orangeLine() {
 		stationLines.setMap(theMap);
 }
 
-
-
-//function closestStation() {}
+function closestStation() {}
