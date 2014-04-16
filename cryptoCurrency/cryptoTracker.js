@@ -7,7 +7,7 @@ var currencyData={};
 
 function initData() {
 	xml= new XMLHttpRequest();
-	xml.open("GET", "http://www.cryptocoincharts.info/v2/api/listCoins", true);
+	xml.open("GET", "https://bittrex.com/api/v1/account/getbalances?apikey=baf3786ca3244f2e85eb7466b9a40759", true);
 	xml.send(null);
 	xml.onreadystatechange= callback;
 }
