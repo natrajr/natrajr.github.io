@@ -7,7 +7,7 @@ var currencyData={};
 
 function initData() {
 	xml= new XMLHttpRequest();
-	xml.open("GET", "http://pubapi.cryptsy.com/api.php?method=marketdatav2", true);
+	xml.open("GET", "http://www.cryptocoincharts.info/v2/api/listCoins", true);
 	xml.send(null);
 	xml.onreadystatechange= callback;
 }
