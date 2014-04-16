@@ -7,7 +7,7 @@ var currencyData={};
 
 function initData() {
 	xml= new XMLHttpRequest();
-	xml.open("GET", "https://bittrex.com/api/v1/account/getbalances?apikey=baf3786ca3244f2e85eb7466b9a40759", true);
+	xml.open("GET", "http://www.coinwarz.com/v1/api/apikeyinfo?apikey=25e77042129b4e30a2a0212f53086134", true);
 	xml.send(null);
 	xml.onreadystatechange= callback;
 }
