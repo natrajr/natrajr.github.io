@@ -7,7 +7,7 @@ var currencyData={};
 
 function initData() {
 	xml= new XMLHttpRequest();
-	xml.open("GET", "http://www.cryptocoincharts.info/v2/api/listCoins", true);
+	xml.open("GET", "http://blockchain.info/ticker", true);
 	xml.send(null);
 	xml.onreadystatechange= callback;
 }
