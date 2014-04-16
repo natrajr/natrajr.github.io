@@ -7,7 +7,7 @@ var currencyData={};
 
 function initData() {
 	xml= new XMLHttpRequest();
-	xml.open("GET", "http://bittrex.com/api/v1/public/getmarkets", true);
+	xml.open("GET", "https://bittrex.com/api/v1/public/getmarkets", true);
 	xml.send(null);
 	xml.onreadystatechange= callback;
 }
