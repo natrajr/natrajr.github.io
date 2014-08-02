@@ -3,7 +3,7 @@ var map;
 var myMarker;
 var myLat=0;
 var myLong=0;
-myLoc;
+var myLoc;
 
 function initMap() {
 	var mapOptions = {
