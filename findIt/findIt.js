@@ -21,7 +21,7 @@ function getLocation() {
 			myLat=position.coords.latitude;
 			myLong=position.coords.longitude;
 			myLoc=new google.maps.LatLng(myLat, myLong);
-			renderMarker();
+			//renderMarker();
 		});
 	}
 	else {
