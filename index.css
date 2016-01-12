@@ -5,10 +5,11 @@ body {
 }
 
 #atf-content {
-	https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.css
+	background-image: url("atf_image.jpeg");
+	background-size: 1280px 640px;
 }
 .parallax-background {
-	height: 620px;
+	height: 720px;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -19,10 +20,11 @@ body {
 }
 
 .intro-text {
-	font-size: 50px;
+	font-size: 100px;
 	color: #fff;
 	text-align: center;
-	margin-top: 15%;
+	margin-top: 3%;
+	font-family: 'Raleway', sans-serif;
 }
 .parallax-content {
 	max-width: 100%;
