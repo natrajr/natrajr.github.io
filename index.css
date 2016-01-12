@@ -4,8 +4,10 @@ body {
 	font-size: 20px;
 }
 
+#atf-content {
+	https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.css
+}
 .parallax-background {
-	background-color: #0078A0;
 	height: 620px;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
