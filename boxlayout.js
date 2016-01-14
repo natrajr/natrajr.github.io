@@ -10,7 +10,7 @@
  */
 var Boxlayout = (function() {
 
-	var $el = $('#bl-main'),
+	var $el = $('#bl-main-sections'),
 		$sections = $el.children('section'),
 		// works section
 		$sectionWork = $('#bl-work-section'),
@@ -48,7 +48,7 @@ var Boxlayout = (function() {
 		
 		$sections.each( function() {
 			
-			var $section = $( this );
+			var $section = $(this);
 
 			// expand the clicked section and scale down the others
 			$section.on( 'click', function() {
