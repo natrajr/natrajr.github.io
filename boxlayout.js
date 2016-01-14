@@ -10,22 +10,22 @@
  */
 var Boxlayout = (function() {
 
-	var $el = $( '#bl-main' ),
-		$sections = $el.children( 'section' ),
+	var $el = $('#bl-main'),
+		$sections = $el.children('section'),
 		// works section
-		$sectionWork = $( '#bl-work-section' ),
+		$sectionWork = $('#bl-work-section'),
 		// work items
-		$workItems = $( '#bl-work-items > li' ),
+		$workItems = $('#bl-work-items > li'),
 		// work panels
-		$workPanelsContainer = $( '#bl-panel-work-items' ),
-		$workPanels = $workPanelsContainer.children( 'div' ),
+		$workPanelsContainer = $('#bl-panel-work-items'),
+		$workPanels = $workPanelsContainer.children('div'),
 		totalWorkPanels = $workPanels.length,
 		// navigating the work panels
-		$nextWorkItem = $workPanelsContainer.find( 'nav > span.bl-next-work' ),
+		$nextWorkItem = $workPanelsContainer.find('nav > span.bl-next-work'),
 		// if currently navigating the work items
 		isAnimating = false,
 		// close work panel trigger
-		$closeWorkItem = $workPanelsContainer.find( 'nav > span.bl-icon-close' ),
+		$closeWorkItem = $workPanelsContainer.find('nav > span.bl-icon-close'),
 		transEndEventNames = {
 			'WebkitTransition' : 'webkitTransitionEnd',
 			'MozTransition' : 'transitionend',
@@ -34,7 +34,7 @@ var Boxlayout = (function() {
 			'transition' : 'transitionend'
 		},
 		// transition end event name
-		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+		transEndEventName = transEndEventNames[Modernizr.prefixed('transition')];
 		// support css transitions
 		supportTransitions = Modernizr.csstransitions;
 
