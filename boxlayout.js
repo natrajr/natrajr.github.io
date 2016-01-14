@@ -41,15 +41,15 @@ var Boxlayout = (function() {
 
 
 	function init() {
+		console.log("In INIT");
 		initEvents();
 	}
 
 	function initEvents() {
-		
+		console.log("initializing events");
 		$sections.each( function() {
-			
 			var $section = $(this);
-
+			console.log("setting sections");
 			// expand the clicked section and scale down the others
 			$section.on( 'click', function() {
 
