@@ -34,9 +34,11 @@ var Boxlayout = (function() {
 			'transition' : 'transitionend'
 		},
 		// transition end event name
-		transEndEventName = transEndEventNames[Modernizr.prefixed('transition')];
+		transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
 		// support css transitions
-		supportTransitions = Modernizr.csstransitions;
+		//supportTransitions = Modernizr.csstransitions;
+		supportTransitions= { transitions : Modernizr.csstransitions };
+
 
 	function init() {
 		initEvents();
