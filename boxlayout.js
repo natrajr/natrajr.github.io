@@ -1,13 +1,3 @@
-/**
- * boxlayout.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
 var Boxlayout = (function() {
 
 	var $el = $('#bl-main-sections'),
@@ -41,12 +31,10 @@ var Boxlayout = (function() {
 
 
 	function init() {
-		console.log("In INIT");
 		initEvents();
 	}
 
 	function initEvents() {
-		console.log("initializing events");
 		$sections.each( function() {
 			var $section = $(this);
 			console.log("setting sections");
@@ -141,3 +129,17 @@ var Boxlayout = (function() {
 	return { init : init };
 
 })();
+
+
+
+
+/**
+ * boxlayout.js v1.0.0
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2013, Codrops
+ * http://www.codrops.com
+ */
