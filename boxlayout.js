@@ -37,7 +37,6 @@ var Boxlayout = (function() {
 	function initEvents() {
 		$sections.each( function() {
 			var $section = $(this);
-			console.log("setting sections");
 			// expand the clicked section and scale down the others
 			$section.on( 'click', function() {
 
