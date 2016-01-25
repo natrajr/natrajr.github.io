@@ -457,7 +457,7 @@ section.bl-expand .bl-icon-close {
 	}
 }
 
-@media screen and (max-width: 1em) {
+@media screen and (max-width: 600px) {
 	#contact-links img {
 		height: 200px;
 		width: 200px;
