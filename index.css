@@ -456,3 +456,11 @@ section.bl-expand .bl-icon-close {
 		width: 40%;
 	}
 }
+
+@media screen and (max-width: 60em) {
+	#contact-links img {
+		height: 200px;
+		width: 200px;
+		display: inline;
+	}
+}
