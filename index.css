@@ -441,6 +441,11 @@ section.bl-expand .bl-icon-close {
 	align-items:center;
 	margin-top: 90px;
 }
+#resume {
+	height: 100%; 
+	width: 80%;
+	margin: 0 auto;
+}
 
 @media screen and (max-width: 46.5em) {
 	.bl-content,
