@@ -440,11 +440,12 @@ section.bl-expand .bl-icon-close {
 	justify-content:center;
 	align-items:center;
 	margin-top: 90px;
+	float:right;
 }
 #resume {
 	height: 100%; 
 	width: 80%;
-	margin: 0 auto;
+	float: right;
 }
 
 @media screen and (max-width: 46.5em) {
