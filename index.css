@@ -440,7 +440,7 @@ section.bl-expand .bl-icon-close {
 	justify-content:center;
 	align-items:center;
 	margin-top: 90px;
-	float:right;
+	float:inherit;
 }
 #resume {
 	height: 100%; 
