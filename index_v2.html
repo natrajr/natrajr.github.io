@@ -1,30 +1,154 @@
 <!DOCTYPE html>
-<head>
-<title>Rohan Natraj | User Experience, Research, Development</title>
-<link rel="stylesheet" type="text/css" href="index_v2.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation-flex.min.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
-<script src="mainPage.js"></script>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<title>Rohan Natraj | Research, UX, Development</title>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div id="welcome-message" style="text-align:center">
+				<h1>Rohan Natraj | Research, User Experience, & Development</h1>
+			</div>
+			<div id="bl-main-sections" class="bl-main">
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-about">About Me</h2>
+					</div>
+					<div class="bl-content">
+						<p>Hello & welcome! My name is Rohan Natraj. I am a user experience researcher and product developer. I believe beautiful products are created by understanding the needs and wants of one's audience. By focusing on developing for users, businesses can build enjoyable experiences while reaping the rewards of an engaged and loyal audience.</p>
+						<p>By leveraging my research experience in Cognitive Science and experience in product development, I am able to gather and deliver valuable insights on how to create products with clean, pleasing experiences that coincide with user expectations. I believe understanding our mental models and processes of perception is essential to creating testable hypotheses and valuable products.</p>
+						<p>I am a lifelong learner continuously seeking to expand my skillset and repertoir of technical tools. Here are some of the technologies I have worked with during my academic and professional careers:</p>
+						<div id="technologies">
+						<p>
+							<a target="_blank" href="https://www.javascript.com/"><img src="icons/jsLogo.png"/></a>
+						</p>
+						<p>
+							<a target="_blank" href="https://jquery.com/"><img src="icons/jquery.png"/></a>
+						</p>
+						<p>
+							<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"><img src="icons/html5.png"/></a>
+						</p>
+						<p>
+							<a target="_blank" href="https://www.mysql.com/"><img style="width:150px" src="icons/mysql.png"/></a>
+						</p>
+						<p>
+							<a target="_blank" href="http://community.pentaho.com/projects/data-integration/"><img style="width: 230px" src="icons/kettle.png"/></a>
+						</p>
+						<p>
+							<a target="_blank" href="https://github.com/ron4trj"><img src="icons/github.png"/></a>
+						</p>
+						<p>
+							<a target="_blank" href="https://balsamiq.com/"><img src="icons/balsamiq.png"/></a>
+						</p>						
+						</div>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-blog">Resume</h2>
+					</div>
+					<div class="bl-content">
+						<div id= "resume">
+						<embed src="./resume/NatrajResume.pdf" width="80%" height="100%" type='application/pdf'>
+						</div>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-works">Portfolio</h2>
+					</div>
+					<div class="bl-content">
+						<h2>Portfolio</h2>
+						<ul id="bl-work-items">
+							<li data-panel="panel-1"><a href="#"><img src="portfolio_assets/ctrends_small.png"/></a></li>
+							<li data-panel="panel-2"><a href="#"><img src="portfolio_assets/docnote.png" /></a></li>
+							<li data-panel="panel-3"><a href="#"><img src="portfolio_assets/efinder.png" /></a></li>
+							<li data-panel="panel-4"><a href="#"><img src="portfolio_assets/rguru.png" /></a></li>
+						</ul>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+			
+
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-contact">Contact</h2>
+					</div>
+					<div class="bl-content">
+						<h2>Feel Free to Reach Out</h2>
+						<div id="contact-links">
+						<p>
+							<a target="_blank" href="https://www.linkedin.com/in/rohannatraj"><img style="width:150px; height:150px" src="icons/linkedin.png"/></a>
+						</p>
+						<p>
+							<a href="mailto:ron4trj@gmail.com"><img style="width:150px; height:150px" src="icons/gmail.png"/></a>
+						</p>
+						<p>
+							<a target="_blank" href="https://www.facebook.com/rohan.natraj"><img style="width:150px; height:150px" src="icons/facebook.png"/></a>
+						</p>
+						</div>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+
+				<!-- Panel items for the portfolio section -->
+				<div class="bl-panel-items" id="bl-panel-work-items">
+					<div data-panel="panel-1">
+						<div>
+							<a href="http://www.careertrends.com/" target="_blank"><img src="portfolio_assets/ctrends.png"/></a>
+							<h3>CareerTrends</h3>
+							<p>CareerTrends is a website that provides a wealth of information about salaries, employment and even personality types to help job seekers make informed career moves. This project inolved extensive use of MySQL and ETL processes (using Pentaho Kettle) to structure & analyze several datasets from government sources. Launching this website required cross-disciplinary collaboration with individuals from engineering and business development. <br>
+							Here are two examples of visualizations I created using javascript and jquery, along with visualization libraries from HighCharts & Google Charts.</p>
+							<div class="ftb-widget" data-width="500" data-height="600" data-widget-id="7NCaEUFZxsN" data-href="http://career-profiles.careertrends.com/l/439/Surgeons" ><a href="http://career-profiles.careertrends.com/l/439/Surgeons" target="_blank" style="font:14px/16px arial;color:#3d3d3d;">Annual Salary for Surgeons | CareerTrends</a></div><script async src="https://s.graphiq.com/rx/widgets.js"></script><br><br>
+							<div class="ftb-widget" data-width="770" data-height="600" data-widget-id="aFVZDH11mVn" data-href="http://career-profiles.careertrends.com/l/439/Surgeons" ><a href="http://career-profiles.careertrends.com/l/439/Surgeons" target="_blank" style="font:14px/16px arial;color:#3d3d3d;">Typical Career Changes for Surgeons | CareerTrends</a></div><script async src="https://s.graphiq.com/rx/widgets.js"></script>
+						</div>
+					</div>
+					<div data-panel="panel-2">
+						<div>
+							<a href="http://www.coroflot.com/rnatraj/DocNote" target="_blank"><img src="portfolio_assets/docnote.png"/></a>
+							<h3>DocNote</h3>
+							<p>DocNote is a clean and simple way to help NeuroRadiology students annotate, save, share and study the many images they diagnose on a daily basis. After several months of working with the students and faculty at Tufts Medical Center, DocNote was designed and prototyped based on the needs and goals of the department. This project involved contextual interviewing, observation, workflow analysis, storyboarding, user persona creation and usability testing. The project was done in a collaborative manner with team members from graphic design and computer science backgrounds.</p>
+						</div>
+					</div>
+					<div data-panel="panel-3">
+						<div>
+							<a href="http://www.coroflot.com/rnatraj/EventFindr" target="_blank"><img src="portfolio_assets/efinder.png" /></a>
+							<h3>EventFindr</h3>
+							<p>EventFindr connects people to events in their area based on the things they like and more importantly, the things they do not like. Users may build a profile of likes and dislikes and let EventFindr find the perfect way to spend their day.</p>
+						</div>
+					</div>
+					<div data-panel="panel-4">
+						<div>
+							<a href="http://www.coroflot.com/rnatraj/Recipe-Guru" target="_blank"><img src="portfolio_assets/rguru.png"/></a>
+							<h3>Recipe Guru</h3>
+							<p>Don't know what to cook with what you've got in your pantry? Recipe Guru is a simple application that finds recipes based on what you have at home. Users can search for recipes or upload their own creations. </p>
+						</div>
+					</div>
+					<nav>
+						<span class="bl-next-work">&gt; Next Project</span>
+						<span class="bl-icon bl-icon-close"></span>
+					</nav>
+				</div>
+			</div>
+		</div><!-- /container -->
 
 
-<body>
-<div class="column row" id="name">
-<h1>Rohan Natraj</h1>
-</div>
-<div class="row" id="contact-section">
-<div class = "columns">
-	<a target="_blank" href="https://www.linkedin.com/in/rohannatraj"><img src="icons/linkedin.png"/></a>
-</div>
-<div class = "columns">
-	<a href="mailto:ron4trj@gmail.com"><img src="icons/gmail.png"/></a>
-</div>
-<div class = "columns">
-	<a target="_blank" href="https://www.facebook.com/rohan.natraj"><img src="icons/facebook.png"/></a>
-</div>
-
-</div>
-
-</body>
-
-</head>
+		<script src="boxlayout.js"></script>
+		<script>
+			$(function() {
+				Boxlayout.init();
+			});
+		</script>
+	</body>
+</html>
