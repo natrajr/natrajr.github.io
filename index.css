@@ -1,0 +1,13 @@
+
+
+.landing {
+   background:url(http://graphicburger.com/wp-content/uploads/2013/10/Bokeh-600.jpg) no-repeat center center fixed;
+    text-align: center;
+    min-height: 100vh;
+    display: block;
+  position:relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
