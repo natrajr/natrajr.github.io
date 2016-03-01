@@ -59,17 +59,42 @@ header * {
 
 header p { 
 	background-color: hsla(0, 0%, 100%,0.4); 
+    margin-top: -1.5em;
+    color: black;
+    font-weight: bold;
 }
 
-main {
+#about-me {
   background-color: hsl(60, 10%, 10%);
   line-height: 1.7;
   max-width: 100%;
-  padding: 5% calc(50% - 16em) 35%;
+  padding: 2.5% calc(50% - 16em) 35%;
   position: relative;
   z-index: 2;
+  background-color: coral;
+  height: 20vh;
 }
 h1 {
 	font-size: 10vh;
+	margin-bottom: :-1vh;
 }
+#about-me {
+	text-align: center;
+}
+h2 {
+	font-size: 7vh;
+}
+#about-me > p {
+	font-size: 2.5vh;
+}
+#resume {
+	line-height: 1.7;
+  	max-width: 100%;
+ 	padding: 2.5% calc(50% - 16em) 35%;
+  	position: relative;
+  	z-index: 2;
+  	background-color: bisque;
+  	height: 20vh;
+}
+
 
