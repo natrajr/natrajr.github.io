@@ -26,8 +26,8 @@ header {
   width: 100vw;
 }
 
-header, header:before { 
-	background: 50% 50% / cover; 
+header, header:before {
+  background-size: cover;
 }
 
 header::before {
@@ -57,7 +57,7 @@ header * {
   padding: 1em 0;
 }
 
-header p { 
+header p {
 	background-color: hsla(0, 0%, 100%,0.4);
     color: black;
     font-weight: bold;
@@ -67,17 +67,21 @@ header p {
 .container {
   width:100%;
 }
-#about-me {
-  opacity: .95;
+#about-me,#resume, #contact, #portfolio {
+  opacity: .9;
   line-height: 1.7;
   position: relative;
   z-index: 2;
-  background-color: coral;
   max-height: 150vh;
   padding: 2.5em;
 }
+
+#about-me {
+  opacity: .95;
+  background-color: coral;
+}
 p  {
-  font-size: 16px;
+  font-size: 110%;
 }
 h1 {
 	color: white;
@@ -94,28 +98,34 @@ h2 {
   margin-top: 2.5em;
 }
 #resume {
-	line-height: 1.7;
-  position: relative;
-  z-index: 2;
   background-color: burlywood;
-  max-height: 150vh;
-  padding: 2.5em;
 }
 #resume-icon {
   height:40vh;
   width: 45vh;
-  margin-bottom:1vh;
+  margin-bottom: 4vh;
   border-radius: 25px;
   margin-top: 2.5em;
 }
 #profile-image, #resume-icon-col {
   text-align: center;
 }
-#contact {
-
+#portfolio {
+  background-color: blue;
 }
-
-
-
-
-
+#skills-bar {
+  position: relative;
+  background-color: sandybrown;
+  max-height: 70vh;
+}
+#skills-bar img {
+  height: 50%;
+  width: 50%;
+  margin: 5vh;
+}
+#contact {
+  background-color: slategray;
+}
+#contact img {
+  margin: 2vh
+}
