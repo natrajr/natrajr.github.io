@@ -65,7 +65,7 @@ header * {
   margin: 2.5vh;
 }
 
-#about-me,#resume, #contact, #portfolio {
+#about-me,#resume, #contact, #portfolio{
   opacity: .9;
   line-height: 1.7;
   position: relative;
@@ -101,6 +101,9 @@ header * {
 #portfolio {
   background-color: #BCECBD;
 }
+#portfolio-nav {
+  text-align: center; 
+}
 div.thumbnail img {
   height: 35vh;
 }
@@ -113,7 +116,7 @@ text-align: -webkit-center;
   max-height: 70vh;
 }
 #skills-bar img {
-  height: 50%;
+  height: 55%;
   width: 50%;
   margin: 5vh;
 }
