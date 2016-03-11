@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: hsla(174, 12%, 61%, 0.75);
+  background-color: hsla(307, 23%, 16%, 0.61);
   margin: 0;
   padding: 0;
   -webkit-perspective: 1px;
@@ -18,8 +18,7 @@ body {
 
 header {
   box-sizing: border-box;
-  min-height: 40vw;
-  padding: 5vw 0 5vw;
+  min-height: 25vw;
   position: relative;
   -webkit-transform-style: inherit;
   transform-style: inherit;
@@ -53,7 +52,17 @@ header * {
   letter-spacing: 0.2em;
   text-align: center;
   margin: 0;
-  padding: 1em 0;
+  padding: .5em 0;
+}
+#nav-bar {
+  margin-left: 1vh;
+  margin-bottom: 25vh;
+}
+.nav-block {
+  height: 5vh;
+  font-size: 3.5vh;
+  text-align: center;
+  margin: 2.5vh;
 }
 
 #about-me,#resume, #contact, #portfolio {
@@ -61,7 +70,7 @@ header * {
   line-height: 1.7;
   position: relative;
   z-index: 2;
-  max-height: 250vh;
+  max-height: 300vh;
   padding: 2.5em;
 }
 
@@ -77,7 +86,7 @@ header * {
 }
 #resume {
   opacity: .95;
-  background-color: #A69FCC;
+  background-color:#9FBBCC;
 }
 #resume-icon {
   height:40vh;
@@ -100,7 +109,7 @@ text-align: -webkit-center;
 }
 #skills-bar {
   position: relative;
-  background-color: rgba(244, 164, 96, 0.7);
+  background-color: rgba(114, 245, 178, 0.72);
   max-height: 70vh;
 }
 #skills-bar img {
@@ -109,17 +118,17 @@ text-align: -webkit-center;
   margin: 5vh;
 }
 #contact {
-  background-color: slategray;
+  background-color: #B9C7D4;
 }
 #contact img {
   margin: 2vh
 }
-h1,h2,h3,h4,p {
+h1,h2,h3,h4,p,a {
   font-family: 'Raleway', sans-serif;
 }
-h1,header p {
-	 background-color: hsla(0, 0%, 100%,0.6);
-    color: black;
+h1,header p, .nav-block {
+	background-color: hsla(0, 0%, 100%,0.6);
+  color: black;
 }
 
 header p {
