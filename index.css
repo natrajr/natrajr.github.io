@@ -54,6 +54,7 @@ header * {
   margin: 0;
   padding: .5em 0;
 }
+
 #nav-bar {
   margin-left: 1vh;
   margin-bottom: 25vh;
@@ -65,7 +66,7 @@ header * {
   margin: 2.5vh;
 }
 
-#about-me,#resume, #contact, #portfolio{
+#about-me,#resume, #contact, #portfolio-1, #portfolio-2{
   opacity: .9;
   line-height: 1.7;
   position: relative;
@@ -102,7 +103,7 @@ header * {
   background-color: #BCECBD;
 }
 #portfolio-nav {
-  text-align: center; 
+  text-align: center;
 }
 div.thumbnail img {
   height: 35vh;
@@ -116,8 +117,8 @@ text-align: -webkit-center;
   max-height: 70vh;
 }
 #skills-bar img {
-  height: 55%;
-  width: 50%;
+  height: 65%;
+  width: 60%;
   margin: 5vh;
 }
 #contact {
@@ -139,4 +140,7 @@ header p {
 }
 h1 {
   font-size: 7.5vh;
+}
+strong {
+  color:rgba(179, 138, 14, 0.77);;
 }
