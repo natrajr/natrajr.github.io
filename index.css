@@ -130,6 +130,9 @@ text-align: -webkit-center;
 h1,h2,h3,h4,p,a {
   font-family: 'Raleway', sans-serif;
 }
+h2 {
+  font-size: 40px;
+}
 h1,header p, .nav-block {
 	background-color: hsla(0, 0%, 100%,0.6);
   color: black;
