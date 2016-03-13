@@ -2,7 +2,6 @@ html {
   height: 100%;
   overflow: hidden;
 }
-
 body {
   background-color: hsla(307, 23%, 16%, 0.61);
   margin: 0;
@@ -66,7 +65,7 @@ header * {
   margin: 2.5vh;
 }
 
-#about-me,#resume, #contact, #portfolio-1, #portfolio-2{
+#about-me,#resume, #contact, #portfolio-1, #portfolio-2 {
   opacity: .9;
   line-height: 1.7;
   position: relative;
@@ -102,9 +101,6 @@ header * {
 #portfolio {
   background-color: #BCECBD;
 }
-#portfolio-nav {
-  text-align: center;
-}
 div.thumbnail img {
   height: 35vh;
 }
@@ -127,6 +123,15 @@ text-align: -webkit-center;
 #contact img {
   margin: 2vh
 }
+#footer {
+  color:white;
+  font-size: 2vh;
+  font-style: italic;
+  text-align: center;
+  background-color: black;
+  padding: 1.5vh;
+  width: inherit;
+}
 h1,h2,h3,h4,p,a {
   font-family: 'Raleway', sans-serif;
 }
@@ -146,4 +151,7 @@ h1 {
 }
 strong {
   color:rgba(179, 138, 14, 0.77);;
+}
+#about-me p, #resume p {
+  line-height: 2;
 }
