@@ -65,10 +65,10 @@
 </div>
   <div id ="resume" class ='row'>
     <div class="col-md-6" id ="resume-icon-col">
-      <a href="https://www.visualcv.com/isc15ulyx3i" target="_blank"><img id='resume-icon' src="./icons/resume_icon.png"></a>
+      <a href="https://www.visualcv.com/isc15ulyx3i/pdf" target="_blank"><img id='resume-icon' src="./icons/resume_icon.png"></a>
       <div class="row">
         <div class='col-md-12'>
-          <a href='https://www.visualcv.com/isc15ulyx3i' target="_blank" class="btn btn-info btn-lg" role="button" id='resume-button'>View My Resume</a>
+          <a href='https://www.visualcv.com/isc15ulyx3i/pdf' target="_blank" class="btn btn-info btn-lg" role="button" id='resume-button'>View My Resume</a>
         </div>
       </div>
     </div>
@@ -83,8 +83,13 @@
     </div>
   </div>
   <div id='portfolio' class="row">
-  <h2 style='text-align:center'>Portfolio</h2>
-  <div id ='portfolio-1' class='row'>
+    <h2 style='text-align:center'>Portfolio</h2>
+  <div class="col-md-12" style='text-align:center; padding-bottom:1.5vh;line-height: 1.7'>
+  <p>My portfolio reflects an emphasis on building products with well-developed user interactions and interfaces.
+    I strive to create unambiguous, clean, and usable products based on well-guided research. Below are examples of my work.
+  </p>
+</div>
+  <div id ='portfolio-1' class='row active' previous='portfolio-2' Next='portfolio-2'>
     <div class='col-md-6'>
       <div class='thumbnail'>
         <a href = "http://www.careertrends.com" target="_blank"><img src="./portfolio_assets/ctrends.png"></a>
@@ -96,8 +101,9 @@
           the flagship <a href="http://www.career-profiles.careertrends.com" target="_blank">Career Profiles</a> research tool that offers
           comprehensive information on over 1,000 career paths through data visualizations & articles.
           It's visualizations and articles have been featured on
-          <a href="http://finance.yahoo.com/news/the-25-most-dangerous-occupations-144554481.html" target="_blank">Yahoo</a> &
-          <a href="http://finance.yahoo.com/news/the-25-most-dangerous-occupations-144554481.html" target="_blank">MSN</a>.
+          <a href="http://finance.yahoo.com/news/the-25-most-dangerous-occupations-144554481.html" target="_blank">Yahoo</a>,
+          <a href="http://www.msn.com/en-us/health/medical/the-10-most-deadly-occupations-in-america/ar-BBmmOkU" target="_blank">MSN</a> &
+          <a href="http://rare.us/story/25-occupations-with-the-biggest-salary-increases/" target="_blank">Rare</a>.
           I managed and grew CareerTrends to a 200K visit per month domain with consistent requests from top publishers for its content.
           This project involved extensive use of <strong>MySQL, Pentaho ETL software & Excel</strong> for data analysis. I created
           custom visualizations using <strong>javascript, HTML/CSS, d3.JS & HighCharts</strong>. I used <strong>Google Analytics &
@@ -129,7 +135,7 @@
       </div>
     </div>
     </div>
-    <div id ='portfolio-2' class='row'>
+    <div id ='portfolio-2' class='row inactive' previous='portfolio-1' Next='portfolio-1'>
       <div class='col-md-6'>
         <div class='thumbnail'>
           <img src="./portfolio_assets/rguru.jpg">
@@ -166,6 +172,14 @@
         </div>
       </div>
       </div>
+      <!--
+      <nav>
+        <ul class="pager">
+          <li><a href="#" id="previous-button">Previous</a></li>
+          <li><a href="#" id="next-button">Next</a></li>
+        </ul>
+      </nav>
+    -->
   </div>
   <div class='row' id ='skills-bar'>
     <div class="col-md-12"><h3>Here are some of the technologies I work with. I am always seeking to learn more & grow</h3></div>
